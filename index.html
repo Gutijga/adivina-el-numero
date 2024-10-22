@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Adivinanza</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>¡Adivina el Número!</h1>
+        <p>He seleccionado un número entre 1 y 50. ¡Intenta adivinarlo!</p>
+
+        <!-- Campo para introducir la adivinanza -->
+        <input type="number" id="adivinanza" min="1" max="50" placeholder="Ingresa tu número">
+        <button id="adivinar-btn">Adivinar</button>
+
+        <!-- Botón de reinicio, oculto inicialmente -->
+        <button id="reiniciar-btn" style="display: none;">Jugar de nuevo</button>
+
+        <!-- Mostrar mensajes y número de intentos -->
+        <p id="mensaje"></p>
+        <p id="intentos">Intentos: 0</p>
+        <p id="felicidades" style="display: none;">¡Felicidades!</p> <!-- Nuevo mensaje de felicitaciones -->
+    </div>
+
+    <!-- Incluir el script de JavaScript -->
+    <script src="static/js/script.js"></script>
+</body>
+</html>

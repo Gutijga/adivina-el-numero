@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative; /* Para que el confeti se posicione correctamente */
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#mensaje {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #e74c3c; /* Color inicial rojo */
+}
+
+#reiniciar-btn {
+    margin-top: 10px;
+    background-color: #e74c3c;
+}
+
+#reiniciar-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Agregar estilo para el mensaje de felicitaciones */
+#felicidades {
+    display: none;
+    margin-top: 20px;
+    font-size: 36px; /* Tamaño más grande */
+    color: #2ecc71; /* Verde */
+    font-weight: bold;
+}
+
+/* Estilos para el confeti */
+.confeti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #e74c3c;
+    animation: caer 4s forwards; /* Aumentar la duración a 4 segundos */
+    pointer-events: none; /* No interferir con la interacción del usuario */
+}
+
+@keyframes caer {
+    0% {
+        transform: translateY(0); /* Iniciar desde la parte superior */
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh); /* Caer hasta la parte inferior de la ventana */
+        opacity: 0;
+    }
+}
